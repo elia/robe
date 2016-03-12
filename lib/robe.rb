@@ -1,5 +1,6 @@
 require 'robe/sash'
 require 'robe/server'
+require 'robe/source'
 
 module Robe
   class << self

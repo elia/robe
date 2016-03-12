@@ -12,6 +12,7 @@ module Robe
       each_object(cls.singleton_class).to_a - [cls]
     end
 
+    # name can be nil, then it just resolves mod
     def resolve_context(name, mod)
       return resolve_const(mod) unless name
       unless name =~ /\A::/

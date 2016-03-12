@@ -51,6 +51,8 @@ module Robe
       end
     end
 
+    # @param mod [Module] the actual module/class
+    # @param inst [Boolean] is it an instance method?
     def find_method(mod, inst, sym)
       mod.__send__(inst ? :instance_method : :method, sym)
     end
