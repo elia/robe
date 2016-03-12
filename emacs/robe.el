@@ -70,7 +70,7 @@ have constants, methods and arguments highlighted in color."
 
 (defvar robe-ruby-path
   (let ((current (or load-file-name (buffer-file-name))))
-    (expand-file-name "lib" (file-name-directory current)))
+    (expand-file-name "../lib" (file-name-directory current)))
   "Path to the backend Ruby code.")
 
 (defvar robe-port nil)

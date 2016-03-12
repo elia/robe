@@ -34,7 +34,7 @@
       (make-directory dir)
       (dolist (file (directory-files ".." t (format "%s.*\\.el\\'" name)))
         (copy-file file dir))
-      (copy-directory "../lib" dir)
+      (copy-directory "../../lib" dir)
       (write-readme commentary dir)
       (with-temp-buffer
         (insert (format "(define-package \"%s\" \"%s\"\n  \"%s\"\n  '%s)"
